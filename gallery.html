@@ -1,0 +1,71 @@
+<doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title> Gallery </title>
+    </head>
+    <body>
+        <header>
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="home.html"><img src="images/website_Elements/logo.png" width="140"></a>
+                </div>
+                    <ul class="mainmenu">
+                        <li> <a>Projects</a> 
+                            <ul class="submenu">
+                                <li><a href="project_one.html">Amazon</a></li>
+                                <li><a href="project_two.html">Lucky Charms</a></li>
+                                <li><a href="project_three.html">Ceto</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="gallery.html"> Gallery </a> </li>
+                        <li> <a href="connect.html"> Connect </a></li>
+                    </ul>
+        </header>
+        <div class="gal_background">
+            <div class="gal_words">
+                <p class="gal_title"> Gallery </p>
+                <div class="gal_gap"></div>
+            </div>
+             <div class="container">
+                <div class="img_container">
+                    <div class="image"><img src="images/gallery/design.jpg"></div>
+                    <div class="image"><img src="images/gallery/pokelab.jpg"></div>
+                    <div class="image"><img src="images/gallery/xenoblade.jpg"></div>
+                    <div class="image"><img src="images/gallery/hungry_hungry_catepillar.jpg"></div>
+                </div>
+            </div>
+            <div class="popup">
+                <span> &times;</span>
+                <img src="images/website_Elements/placeholder.png" height="500px">
+            </div>
+            </div>
+            <script>
+                document.querySelectorAll('.img_container img').forEach(image =>{
+                    image.onclick = () =>{
+                        document.querySelector('.popup').style.display = 'block';
+                        document.querySelector('.popup img').src = image.getAttribute('src')
+                    }
+                });
+        
+                document.querySelector('.popup span').onclick = () =>{
+                    document.querySelector('.popup').style.display = 'none';
+                }    
+            </script>
+             <div>
+                <p id="lets_connect"> Let's Connect!</p>
+            </div>
+            <div class="connect_icons">
+                <a href="https://www.linkedin.com/in/baoxu-liang-43486b275" target="_blank"><img src="images/website_Elements/linked_In_logo_black.png" width="75"> </a>
+                <a href="mailto:baoxu.liang1@gmail.com"><img src="images/website_Elements/email_icon.png" width="70"></a>
+            </div>  
+        </div>
+        <div class="footer">  
+            <p> @ 2025 Baoxu Liang | All Rights Reserved </p> 
+        </div>
+    </body>
+</html>

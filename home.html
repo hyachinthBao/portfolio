@@ -1,0 +1,105 @@
+<doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <!-- Below adds the font: Playfair Display -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <title> Home </title>
+    </head>
+    <body>
+        <header>
+            <div class="navdiv">
+                <div class="logo">
+                    <a href="home.html"><img src="images/website_Elements/logo.png" width="140"></a>
+                </div>
+                    <ul class="mainmenu">
+                        <li> <a> Projects </a> 
+                            <ul class="submenu">
+                                <li><a href="project_one.html">Amazon</a></li>
+                                <li><a href="project_two.html">Lucky Charms</a></li>
+                                <li><a href="project_three.html">Ceto</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="gallery.html"> Gallery </a> </li>
+                        <li> <a href="connect.html"> Connect </a></li>
+                    </ul>
+        </header>
+        <div class="content">
+            <p id="big_intro"> Hello, I'm Baoxu! </p>
+             <p id="small_intro"> Junior UI/UX Designer</p>
+            <img src="images/home_page/arrow.gif" id="arrow">
+            <p id="center_header" class="word_header"> Here's What I Do! </p>
+            <div class="home_space"></div>
+            <div class="highlights">
+                <div class="home_section">
+                    <div class="testHome">
+                        <div>
+                            <p class="word_header">Amazon Redesign</p>
+                            <p class="word_description"> A practice of UI/UX tools</p>
+                            <a href="project_one.html"><p> see more ></a></p> 
+                        </div>
+                        <div class="home_image">
+                            <img src="images/project_One/project_one_final.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="highlights_space"></div>
+                <div class="home_section">
+                    <div class="testHome">
+                        <div>
+                            <p class="word_header">Pokemon Charms</p>
+                            <p class="word_description"> A practice of branding</p>
+                            <a href="project_two.html"><p> see more ></a></p>
+                        </div>
+                        <div class="home_image">
+                            <img src="images/project_Two/project_two_final_mockup.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="highlights_space"></div>
+                <div class="home_section">
+                    <div class="testHome">
+                        <div>
+                            <p class="word_header">Ceto Type Book</p>
+                            <p class="word_description"> A practice of layout</p>
+                            <a href="project_three.html"><p> see more ></a></p>
+                        </div>
+                        <div>
+                            <img src="images/project_Three/project_three_final_mockup.png" alt="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="highlights_space"></div>
+                <div class="just_space"></div>
+            </div>
+        </div>
+            <div>
+                <p id="lets_connect"> Let's Connect!</p>
+            </div>
+            <div class="connect_icons">
+                <a href="https://www.linkedin.com/in/baoxu-liang-43486b275" target="_blank"><img src="images/website_Elements/linked_In_logo_black.png" width="75"> </a>
+                <a href="mailto:baoxu.liang1@gmail.com"><img src="images/website_Elements/email_icon.png" width="70"></a>
+            </div>
+        </div>
+        <div class="footer">  
+            <p> @ 2025 Baoxu Liang | All Rights Reserved </p> 
+        </div>
+        <script>
+            window.addEventListener('scroll', function() {
+            const image = document.getElementById('arrow');
+            const scrollPosition = window.scrollY;
+            const fadeStart = 50;
+
+            if (scrollPosition > fadeStart) {
+                const opacity = Math.max(0, 1 - (scrollPosition - fadeStart) / 300); // Fade out
+                image.style.opacity = opacity;
+            } else {
+                image.style.opacity = 1;
+            }
+        });
+        </script>
+    </body>
+</html>

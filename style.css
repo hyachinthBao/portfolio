@@ -1,0 +1,495 @@
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0px
+    
+}
+
+/* Navigation Bar */
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+}
+
+.navdiv{
+    display: flex;
+    height: 65px;
+}
+.navdiv img {
+    margin: 20px;
+    padding-left: 10;
+    
+}
+.navdiv ul{
+    list-style: none;
+    font-family: "Playfair Display";
+    display: flex;
+    flex-direction: inline;
+}
+.navdiv a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16;
+    font-weight: 500;
+}
+
+.navdiv a:hover{
+    color:rgb(215, 212, 232)
+    
+}
+
+.navdiv li{
+    margin: 10;
+    margin-right: 50;
+}
+
+.navdiv ul li{
+    width: 20px;
+}
+.navdiv ul li ul.submenu{
+    background-color: rgb(255, 255, 255);
+    display: none;
+    z-index: 1000;
+}
+.navdiv ul li:hover ul.submenu{
+    display: block;
+    width: 100px; 
+    padding: 7px;
+}
+header .navdiv .mainmenu{
+    display: flex;
+    position: fixed;
+    right: 20px;
+}
+
+/* Homepage content */
+.content{
+    width: 100%;
+    background-size: cover;
+    background-image: url(images/home_page/gradiant.png);
+}
+
+#big_intro {
+    padding-top: 230px;
+    font-family: "Playfair Display";
+    font-size: 96;
+    margin:auto;
+    text-align: center;
+}
+
+#small_intro{
+    font-family: "Playfair Display";
+    font-size: 48;
+    margin:auto;
+    text-align: center;
+
+}
+#arrow{
+    margin-top: 230;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    margin-bottom: 200;
+    user-select: none;
+    opacity: 0.5 ease;
+}
+
+.home_space{
+    height: 50px;
+}
+
+#center_header{
+    display: flex;
+    justify-content: center;
+}
+
+.home_section{
+    background-color: #ffffff;
+    border-radius: 20px 20px 20px 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 30px;
+    transition: .1s linear;
+}
+
+.home_section:hover{
+    transform: scale(1.1);
+}
+
+.testHome{
+    display: flex;
+    justify-content: space-between;
+}
+
+.testHome img{
+    width: 100%;
+}
+
+.testHome p{
+    margin-left: 30;
+}
+
+.home_heading{
+    font-family: "Playfair Display";
+    font-size: 48;
+    font-weight: 700;
+}
+
+.home_description{
+    padding-bottom: 3em;
+    font-family: Georgia;
+    font-size: 20;
+}
+
+.highlights_space{
+    height: 90px;
+}
+
+.highlights a{
+    text-decoration: none;
+    color: black;
+}
+
+.highlights a:hover{
+    color: lightgray;
+}
+
+/* Projects Template */
+
+.project_format{
+    padding-top: 120;
+    margin: auto;
+    width: 50%;
+}
+
+.project_format img{
+    width: 100%;
+    border-radius: 1%;
+}
+
+.project_navigator{
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.project_navigator a{
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.project_navigator a:hover{
+    color: lightgrey;
+}
+
+.project_one_background{
+    width: 100%;
+    background-size: cover;
+    background-image: url(images/project_One/gradiant.png);
+}
+
+/* Word Types */
+.word_header {
+    font-family: "Playfair Display";
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.word_subheader{
+    font-family: "Playfair Display";
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.word_description{
+    padding-bottom: 3em;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+
+/* Quick Connect Icons */
+#lets_connect{
+    font-family: "Playfair Display";
+    text-align: center;
+    font-size: 24;
+    padding-top: 5em;
+    font-weight: 700;
+    justify-content: center;
+}
+
+.connect_icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+
+.connect_icons img:hover{
+    opacity: 0.7;
+}
+
+/* Footer */
+.footer{
+    background-color: white;
+    display: fixed;
+    bottom: 0;
+    left: 0;
+    padding-top: 120;
+    width: 100%;
+}
+
+.footer p{
+    margin-left: 20;
+}
+
+/* Gallery Content */
+
+.gal_background{
+    background-image: url(images/gallery/gradiant.png);
+    width: 100%;
+    background-size: cover;
+}
+
+.gal_title{
+    font-family: "Playfair Display";
+    font-size: 100px;
+    margin:auto;
+    text-align: center;
+    margin-top: 100;
+}
+
+.gal_words{
+    padding-top: 120;
+    margin: auto;
+    width: 50%;
+}
+
+.gal_words p{
+    text-align: center;
+}
+
+.container{
+    margin: 100;
+}
+.img_container{
+    --gap:1rem;
+    --num_column: 2;
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num_column), 1fr);
+    grid-auto-rows: 400px;
+    gap: var(--gap);
+
+} 
+
+.container .img_container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .2s linear;
+    background-color: aqua;
+}
+
+.container .img_container .image:hover img{
+    transform: scale(1.1);
+}
+
+/* Gallery Popup */
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    z-index: 10000;
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.popup img{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.popup span{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+@media (max-width:875px){
+    .container .popup img{
+        width: 95%;
+    }
+}
+
+/* Connect Area!!!*/
+
+.connect_profile{
+    background-image: url(images/connect_page/gradiant.png);
+    width: 100%;
+    background-size: cover;
+    margin-top: 150px;
+}
+
+.column{
+    max-width: 60%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c1{
+    width: 50%;
+}
+
+.c2{
+    padding-left: 20px;
+    padding-top: 50px;
+}
+.c2 img{
+    border-radius: 100%;
+    object-fit: cover;
+    width: 300px;
+}
+
+.c1 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/* Connnect_page: change color on resume link on hover */
+.c1 a:hover{
+    color:rgb(255, 255, 255)
+}
+/* ALL PAGES: adaptable elements VERY_IMPORTANT */
+
+@media screen and (max-width: 1000px) {
+    #my_description{
+        font-size: 16;
+    }
+    #text_resume{
+        font-size: 16px;
+    }
+    .c2 img{
+       width: 200px;
+       padding-top: 60px; 
+       border-radius: 100%;
+
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #my_description{
+        font-size: 12px;
+    }
+    #text_resume{
+        font-size: 12px;
+    }
+    .word_header{
+        font-size: 30px;
+    }
+    .word_description{
+        font-size: 15px;
+    }
+}
+
+/* Connnect_page: Centered Form */
+.connect_container {
+    margin: auto;
+    width: 60%;    
+}
+
+/* Connnect_page: Makes the Name and Email Inputs side by side */
+.form_columns{
+    display: flex;
+    justify-content: space-between;    
+}
+
+.form_c1{
+    width: 40%;
+}
+
+.form_c2{
+    width: 40%
+}
+
+/* Connnect_page: Changes the color of placeholder text */
+::placeholder {
+    color: rgb(165, 165, 165);
+    opacity: 1; /* Firefox */
+    font-size: 16;
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+    color: rgb(165, 165, 165);
+}
+
+/* Connnect_page: Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #000000; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-bottom: 16px;
+    resize: none;
+    background-color: transparent;
+    color: #000000;
+    margin-bottom: 30px;
+    font-size: 16;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    outline: none;
+}
+
+/* Connnect_page: Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: transparent;
+    padding: 12px 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+/* Connnect_page: When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+   background-color: #000000;
+   color: white;
+}
+
+/* Connnect_page: Adding space between text and textbox */
+.connect_space{
+    font-display: none;
+    color: transparent;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+/* Gap between instagram logo and submit button */
+.insta_gap{
+    height: 100px;
+}
